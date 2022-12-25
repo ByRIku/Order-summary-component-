@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+
+  /* Primary */
+
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  
+  /* Neutral */
+  
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+
+}
+
+ /******************** reset ********************/
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /**********************************************/
+
+html{
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+}
+
+.main-container{
+  background-image: url(../imgs/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--Pale-blue);
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-card{
+  max-width: 350px;;
+  /* border: 1px solid; */
+  border-radius: 6%;
+  overflow: hidden;
+  background-color: white;
+}
+
+.card-image img{
+  width: 100%;
+}
+
+.card-info{
+  text-align: center;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0rem;
+
+}
+.card-info p{
+  color: var(--Desaturated-blue);
+  margin: 1rem 0rem;
+}
+
+.card__plan{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid; */
+  padding: .5rem 1.5rem;
+  border-radius: .5rem;
+  margin: 1rem 0rem;
+  background-color: rgba(222, 151, 151, 0.086);
+}
+
+.plan_detail{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.plan_detail_2{
+  padding-left: 1rem;
+
+}
+.plan_detail_2 span{
+  color: rgba(0, 0, 0, 0.4);
+}
+.change{
+  color: var(--Bright-blue);
+}
+
+.boton-pay{
+  width: 100%;
+  padding: .5rem 1.5rem;
+  margin: 1rem 0rem;
+  color: white;
+  font-weight: 900;
+  font-family: 'Red Hat Display', sans-serif;
+  border-radius: 10px;
+  background-color: var(--Bright-blue);
+  border-style: none;
+  cursor: pointer;
+  
+}
+
+.boton-pay:hover{
+  background-color:  hsla(245, 75%, 52%, 0.5);
+  transition: 100ms;
+}
+
+.boton-cancel{
+  background-color: transparent;
+  border: none; 
+  color: black ;
+  cursor: pointer;
+  width: 100%;
+  padding: .5rem 1.5rem;
+  margin: .5rem 0rem;
+}
+.boton-cancel:hover{
+  color:  hsla(245, 75%, 52%, 0.5);
+  transition: 100ms;
+}
+
+
+/* ***************** FOOTER ***************** */
+.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+
+}
+
+
+/* ****************************************** */
