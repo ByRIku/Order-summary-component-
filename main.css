@@ -66,6 +66,10 @@ html{
   margin: 1rem 0rem;
 }
 
+.card__title h1{
+  font-size: 1.8rem;
+}
+
 .card__plan{
   display: flex;
   flex-direction: row;
@@ -117,8 +121,7 @@ html{
 }
 
 .boton-cancel{
-  background-color: transparent;
-  border: none; 
+  text-decoration: none;
   color: black ;
   cursor: pointer;
   width: 100%;
